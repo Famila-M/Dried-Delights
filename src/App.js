@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import AboutUs from "./components/AboutUs";
+import AppBar from "./components/AppBar";
+import Banner from "./components/Banner";
+import ContactUs from "./components/ContactUs";
+import Products from "./components/Products";
+import SpecialWeek from "./components/SpecialWeek";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AppBar />
+      <Banner />
+      <Products />
+      <SpecialWeek />
+      <AboutUs />
+      <ContactUs />
+      <div className="text-center my-3 text-primary small">
+        <i class="bi bi-c-circle"></i> Dried Delights 2024 All rights reserved.
+      </div>
+    </>
   );
 }
 
